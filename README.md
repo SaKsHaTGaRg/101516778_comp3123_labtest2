@@ -1,70 +1,71 @@
-# Getting Started with Create React App
+This is a readme file for my lab test 2 for comp3123 full stack devlopment
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Weather App – COMP3123 Lab Test 2
 
-## Available Scripts
+This project was completed for COMP3123 – Full Stack Development I (Lab Test 2).  
+The goal of the assignment was to build a React application that displays current weather information for any city using a public API.  
+Users can search for a city and view temperature, weather condition, official weather icon, humidity, wind speed, and pressure.  
+The UI/UX layout is custom-designed based on the API response and follows all assignment requirements.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## Project Description
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+This application retrieves real-time weather information from the OpenWeatherMap Current Weather API.  
+When a user enters a city name, the app fetches the current weather data and displays it in a clean, custom-designed weather card.  
+The project demonstrates the use of:
+- React components  
+- State and hooks  
+- Props  
+- API integration  
+- Environment variables  
+- Custom UI/UX design  
+- Postman API testing  
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## Setup Steps
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clone the repository: https://github.com/SaKsHaTGaRg/101516778_comp3123_labtest2
 
-### `npm run build`
+ 2. Install dependencies: npm install
+  
+3. Create a `.env` file in the project root (same level as package.json):
+4. Start the development server: npm start
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## API Used
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+OpenWeatherMap Current Weather API:
+https://api.openweathermap.org/data/2.5/weather
 
-### `npm run eject`
+Weather icons:
+https://openweathermap.org/img/wn/{icon}@2x.png
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+**## Screenshots**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. Home Page  -- 
+<img width="1909" height="848" alt="Screenshot 2025-11-27 154645" src="https://github.com/user-attachments/assets/e0894799-3327-4559-8c2c-72b17ad027de" />
+2. Search result -- 
+<img width="1919" height="865" alt="Screenshot 2025-11-27 154656" src="https://github.com/user-attachments/assets/a826f033-225a-4ff5-b270-fa12f1566501" />
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+3. Postman testing -- 
+<img width="1384" height="882" alt="Screenshot 2025-11-27 155112" src="https://github.com/user-attachments/assets/69a11434-b7fd-4f86-8578-84aff41ae2be" />
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+##  Notes & Assumptions
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- The assignment only requires **current weather**, not forecast or multi-day data.
+- Weather icons must come from OpenWeatherMap, as instructed.
+- The UI is custom-designed based on the API response, following the rubric.
+- The API key is stored in a `.env` file and accessed via `process.env`.
+- The project is deployed on Vercel, and the API key is added as an environment variable there as well.
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+##  Author
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**Sakshat Garg**  
+Student ID: **101516778**  
+COMP3123 – Full Stack Development I  
+George Brown College
