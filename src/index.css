@@ -1,13 +1,98 @@
 body {
+  background: linear-gradient(180deg, #4d78ff, #9ac2ff);
+  font-family: "Segoe UI", sans-serif;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 30px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.app-container {
+  max-width: 500px;
+  margin: auto;
+  text-align: center;
+}
+
+.title {
+  font-size: 2.3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.search-box {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.search-box input {
+  padding: 12px 14px;
+  width: 65%;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.search-box button {
+  padding: 12px 18px;
+  margin-left: 10px;
+  border: none;
+  background: #222;
+  color: white;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.weather-card {
+  margin-top: 25px;
+  padding: 30px;
+  border-radius: 25px;
+
+  background: rgba(255, 255, 255, 0.28);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  color: #222;
+  text-align: center;
+}
+
+.weather-card h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.temp-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.temp-section img {
+  width: 70px;
+  height: 70px;
+  margin-right: 8px;
+}
+
+.temp-section h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.condition {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+}
+
+.details {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 6px;
+  font-size: 1rem;
+}
+
+.details p {
+  margin: 4px 0;
 }
